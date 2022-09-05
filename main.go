@@ -18,7 +18,7 @@ func main() {
 		panic(err)
 	}
 
-	reader, err := cli.ImagePull(ctx, "docker.io/library/alpine", types.ImagePullOptions{})
+	reader, err := cli.ImagePull(ctx, "alpine", types.ImagePullOptions{})
 	if err != nil {
 		panic(err)
 	}
